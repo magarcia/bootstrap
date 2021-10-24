@@ -1,0 +1,15 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/*", "__sapper__/*", "public/*"],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "strict": true,
+    "module": "esnext",
+    "lib": ["es2019", "es6", "dom", "webworker"],
+    "noEmit": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true
+  },
+}
